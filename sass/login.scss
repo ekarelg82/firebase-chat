@@ -1,0 +1,91 @@
+#login-screen {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  animation: colorchange 50s infinite;
+  -webkit-animation: colorchange 50s infinite;
+  @keyframes colorchange {
+    0% {
+      background: #9FF781;
+    }
+
+    25% {
+      background: #819FF7;
+    }
+
+    50% {
+      background: #F3F781;
+    }
+
+    75% {
+      background: #F5DA81;
+    }
+
+    100% {
+      background: #F7BE81;
+    }
+  }
+  @-webkit-keyframes {
+    0% {
+      background: #9FF781;
+    }
+
+    25% {
+      background: #819FF7;
+    }
+
+    50% {
+      background: #F3F781;
+    }
+
+    75% {
+      background: #F5DA81;
+    }
+
+    100% {
+      background: #F7BE81;
+    }
+  }
+
+  .logo {
+    padding-top: 40px;
+  }
+
+  .login-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+    border: solid 2px;
+    border-color: #0e0f11;
+    border-radius: 50px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.75s ease;
+
+    &:hover {
+      background-color: #9FF781;
+      border-color: #F7BE81;
+      transform: scale(1.1);
+      color: #F7BE81;
+    }
+  }
+
+  .title {
+    font-size: 30px;
+    font-weight: bold;
+    color: #0e0f11;
+    justify-content: center;
+    text-shadow: 2px 1px #D8D8D8;
+    font-style: italic;
+    font-variant: small-caps;
+  }
+
+  .gretting {
+    padding: 1cm;
+  }
+}
